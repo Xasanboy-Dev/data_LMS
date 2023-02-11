@@ -1,0 +1,25 @@
+@url=http://localhost:8080/groups
+
+GET {{url}} HTTP/1.1
+###
+POST {{url}} HTTP/1.1
+Content-Type: application/json
+
+{
+    "name":"Nodejs 147",
+    "direction":"BACKEND"
+}
+###
+PUT {{url}}/cfecf0ea-22f3-4578-91e3-5c53190464b4
+Content-Type: application/json
+
+{
+    "name":"Xasanboy",
+    "direction":"Fullstack"
+}
+
+###
+DELETE  {{url}}/cfecf0ea-22f3-4578-91e3-5c53190464b4
+
+###
+GET {{url}}/0f0d83d0-b4fe-4c6c-8dae-535ffd135467
